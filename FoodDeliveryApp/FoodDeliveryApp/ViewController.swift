@@ -8,11 +8,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    let label = UILabel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let label = UILabel()
         view.backgroundColor = .gray
         
         label.text = "Hello, World!"
@@ -26,7 +25,7 @@ class ViewController: UIViewController {
             label.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20)
         ])
         
-        label.font = .systemFont(ofSize: 40, weight: UIFont.Weight(rawValue: 20))
+        label.font = .Roboto.mediumItalic.size(of: 40)
     }
 
 
