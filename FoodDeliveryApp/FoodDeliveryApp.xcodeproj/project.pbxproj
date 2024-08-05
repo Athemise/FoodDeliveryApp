@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		08696B022C6130890047E7C7 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08696B012C6130890047E7C7 /* Coordinator.swift */; };
+		08696B042C6134F90047E7C7 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08696B032C6134F90047E7C7 /* AppCoordinator.swift */; };
+		08696B062C6135AA0047E7C7 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08696B052C6135AA0047E7C7 /* OnboardingCoordinator.swift */; };
 		08993C642C5D5DFF00164BC2 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08993C572C5D5DFF00164BC2 /* Roboto-Medium.ttf */; };
 		08993C652C5D5DFF00164BC2 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08993C582C5D5DFF00164BC2 /* Roboto-Light.ttf */; };
 		08993C662C5D5DFF00164BC2 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08993C592C5D5DFF00164BC2 /* Roboto-Regular.ttf */; };
@@ -33,6 +35,8 @@
 
 /* Begin PBXFileReference section */
 		08696B012C6130890047E7C7 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		08696B032C6134F90047E7C7 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		08696B052C6135AA0047E7C7 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
 		08993C572C5D5DFF00164BC2 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		08993C582C5D5DFF00164BC2 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
 		08993C592C5D5DFF00164BC2 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
@@ -89,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				08696B012C6130890047E7C7 /* Coordinator.swift */,
+				08696B032C6134F90047E7C7 /* AppCoordinator.swift */,
+				08696B052C6135AA0047E7C7 /* OnboardingCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -258,6 +264,8 @@
 				08E52EE12C4A6B9E00B61FA6 /* ViewController.swift in Sources */,
 				08E52EDD2C4A6B9E00B61FA6 /* AppDelegate.swift in Sources */,
 				08993C772C5D662F00164BC2 /* AppColors.swift in Sources */,
+				08696B062C6135AA0047E7C7 /* OnboardingCoordinator.swift in Sources */,
+				08696B042C6134F90047E7C7 /* AppCoordinator.swift in Sources */,
 				08E52EDF2C4A6B9E00B61FA6 /* SceneDelegate.swift in Sources */,
 				08993C752C5D652400164BC2 /* UIColor + Extension.swift in Sources */,
 				08696B022C6130890047E7C7 /* Coordinator.swift in Sources */,
