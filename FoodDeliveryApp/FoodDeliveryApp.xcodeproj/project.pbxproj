@@ -15,6 +15,8 @@
 		08696B0C2C613AE10047E7C7 /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08696B0B2C613AE10047E7C7 /* ListCoordinator.swift */; };
 		08696B0E2C613AF30047E7C7 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08696B0D2C613AF30047E7C7 /* ProfileCoordinator.swift */; };
 		08696B102C613B7D0047E7C7 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08696B0F2C613B7D0047E7C7 /* TabBarController.swift */; };
+		08696B142C6145360047E7C7 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08696B132C6145360047E7C7 /* OnboardingViewController.swift */; };
+		08696B162C61455F0047E7C7 /* OnboardingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08696B152C61455F0047E7C7 /* OnboardingViewPresenter.swift */; };
 		08993C642C5D5DFF00164BC2 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08993C572C5D5DFF00164BC2 /* Roboto-Medium.ttf */; };
 		08993C652C5D5DFF00164BC2 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08993C582C5D5DFF00164BC2 /* Roboto-Light.ttf */; };
 		08993C662C5D5DFF00164BC2 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08993C592C5D5DFF00164BC2 /* Roboto-Regular.ttf */; };
@@ -47,6 +49,8 @@
 		08696B0B2C613AE10047E7C7 /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
 		08696B0D2C613AF30047E7C7 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
 		08696B0F2C613B7D0047E7C7 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		08696B132C6145360047E7C7 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		08696B152C61455F0047E7C7 /* OnboardingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPresenter.swift; sourceTree = "<group>"; };
 		08993C572C5D5DFF00164BC2 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		08993C582C5D5DFF00164BC2 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
 		08993C592C5D5DFF00164BC2 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
@@ -112,6 +116,23 @@
 				08696B072C613A920047E7C7 /* HomeCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		08696B112C6144ED0047E7C7 /* UILayer */ = {
+			isa = PBXGroup;
+			children = (
+				08696B122C61451E0047E7C7 /* Onboarding */,
+			);
+			path = UILayer;
+			sourceTree = "<group>";
+		};
+		08696B122C61451E0047E7C7 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				08696B132C6145360047E7C7 /* OnboardingViewController.swift */,
+				08696B152C61455F0047E7C7 /* OnboardingViewPresenter.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		08993C542C5D5DCD00164BC2 /* Resources */ = {
@@ -180,6 +201,7 @@
 		08E52EDB2C4A6B9E00B61FA6 /* FoodDeliveryApp */ = {
 			isa = PBXGroup;
 			children = (
+				08696B112C6144ED0047E7C7 /* UILayer */,
 				08696AFE2C6130430047E7C7 /* NavigationLayer */,
 				08993C542C5D5DCD00164BC2 /* Resources */,
 				08E52EDC2C4A6B9E00B61FA6 /* AppDelegate.swift */,
@@ -282,12 +304,14 @@
 				08696B062C6135AA0047E7C7 /* OnboardingCoordinator.swift in Sources */,
 				08696B042C6134F90047E7C7 /* AppCoordinator.swift in Sources */,
 				08696B0A2C613ACD0047E7C7 /* OrderCoordinator.swift in Sources */,
+				08696B142C6145360047E7C7 /* OnboardingViewController.swift in Sources */,
 				08E52EDF2C4A6B9E00B61FA6 /* SceneDelegate.swift in Sources */,
 				08696B0E2C613AF30047E7C7 /* ProfileCoordinator.swift in Sources */,
 				08696B0C2C613AE10047E7C7 /* ListCoordinator.swift in Sources */,
 				08696B082C613A920047E7C7 /* HomeCoordinator.swift in Sources */,
 				08696B102C613B7D0047E7C7 /* TabBarController.swift in Sources */,
 				08993C752C5D652400164BC2 /* UIColor + Extension.swift in Sources */,
+				08696B162C61455F0047E7C7 /* OnboardingViewPresenter.swift in Sources */,
 				08696B022C6130890047E7C7 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
