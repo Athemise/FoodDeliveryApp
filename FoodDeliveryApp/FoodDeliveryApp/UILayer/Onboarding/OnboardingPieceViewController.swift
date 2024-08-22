@@ -25,6 +25,7 @@ class OnboardingPieceViewController: UIViewController {
             descriptionLabel.text = descriptionText
         }
     }
+    var buttonText: String?
     
     //MARK: - Views
     private let imageView = UIImageView()
