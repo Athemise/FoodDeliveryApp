@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		080A8CE62C7BB80F001B55F5 /* SceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080A8CE52C7BB80F001B55F5 /* SceneFactory.swift */; };
+		084688282C77C8C10010E265 /* UserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084688272C77C8C10010E265 /* UserStorage.swift */; };
 		085917062C6AA2350050A98F /* OnboardingPieceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085917052C6AA2350050A98F /* OnboardingPieceViewController.swift */; };
 		08696B022C6130890047E7C7 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08696B012C6130890047E7C7 /* Coordinator.swift */; };
 		08696B042C6134F90047E7C7 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08696B032C6134F90047E7C7 /* AppCoordinator.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		080A8CE52C7BB80F001B55F5 /* SceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneFactory.swift; sourceTree = "<group>"; };
+		084688272C77C8C10010E265 /* UserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorage.swift; sourceTree = "<group>"; };
 		085917052C6AA2350050A98F /* OnboardingPieceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPieceViewController.swift; sourceTree = "<group>"; };
 		08696B012C6130890047E7C7 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		08696B032C6134F90047E7C7 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -89,6 +93,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		080A8CE42C7BB7F0001B55F5 /* SceneFactory */ = {
+			isa = PBXGroup;
+			children = (
+				080A8CE52C7BB80F001B55F5 /* SceneFactory.swift */,
+			);
+			path = SceneFactory;
+			sourceTree = "<group>";
+		};
+		084688262C77C89D0010E265 /* ServicesLayer */ = {
+			isa = PBXGroup;
+			children = (
+				084688272C77C8C10010E265 /* UserStorage.swift */,
+			);
+			path = ServicesLayer;
+			sourceTree = "<group>";
+		};
 		08696AFE2C6130430047E7C7 /* NavigationLayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +143,7 @@
 		08696B112C6144ED0047E7C7 /* UILayer */ = {
 			isa = PBXGroup;
 			children = (
+				080A8CE42C7BB7F0001B55F5 /* SceneFactory */,
 				08696B122C61451E0047E7C7 /* Onboarding */,
 			);
 			path = UILayer;
@@ -204,6 +225,7 @@
 		08E52EDB2C4A6B9E00B61FA6 /* FoodDeliveryApp */ = {
 			isa = PBXGroup;
 			children = (
+				084688262C77C89D0010E265 /* ServicesLayer */,
 				08696B112C6144ED0047E7C7 /* UILayer */,
 				08696AFE2C6130430047E7C7 /* NavigationLayer */,
 				08993C542C5D5DCD00164BC2 /* Resources */,
@@ -314,6 +336,8 @@
 				08696B0C2C613AE10047E7C7 /* ListCoordinator.swift in Sources */,
 				08696B082C613A920047E7C7 /* HomeCoordinator.swift in Sources */,
 				08696B102C613B7D0047E7C7 /* TabBarController.swift in Sources */,
+				084688282C77C8C10010E265 /* UserStorage.swift in Sources */,
+				080A8CE62C7BB80F001B55F5 /* SceneFactory.swift in Sources */,
 				08993C752C5D652400164BC2 /* UIColor + Extension.swift in Sources */,
 				08696B162C61455F0047E7C7 /* OnboardingViewPresenter.swift in Sources */,
 				08696B022C6130890047E7C7 /* Coordinator.swift in Sources */,
