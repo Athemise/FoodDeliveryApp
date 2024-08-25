@@ -14,11 +14,12 @@ class OnboardingViewController: UIViewController {
     // MARK: - Properties
     private var pages = [OnboardingPieceViewController]()
     private var bTitle = "Next"
+    private var currentPageIndex = 0
     
     // MARK: - Views
     private var pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
     private let pageControl = UIPageControl()
-    weak var viewOutput: OnboardingViewOutput!
+    var viewOutput: OnboardingViewOutput!
     private var bottomButton = UIButton()
     
     init(pages: [OnboardingPieceViewController] = [OnboardingPieceViewController](), viewOutput: OnboardingViewOutput!) {
@@ -55,6 +56,7 @@ private extension OnboardingViewController {
             pageViewController.setViewControllers([pages[3]], direction: .forward, animated: true)
         case 3:
             print("Exit")
+            viewOutput.onboardingFinish()
         default:
             break
         }
@@ -133,8 +135,14 @@ extension OnboardingViewController: UIPageViewControllerDataSource {
 extension OnboardingViewController: UIPageViewControllerDelegate {
     func pageViewController(_ pageViewController: UIPageViewController, willTransitionTo pendingViewControllers: [UIViewController]) {
         if let index = pages.firstIndex(of: pendingViewControllers.first! as! OnboardingPieceViewController) {
-            pageControl.currentPage = index
-            let page = pages[index]
+            currentPageIndex = index
+        }
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        if completed {
+            pageControl.currentPage = currentPageIndex
+            let page = pages[currentPageIndex]
             bTitle = page.buttonText ?? "Next"
             bottomButton.setTitle(bTitle, for: .normal)
         }
