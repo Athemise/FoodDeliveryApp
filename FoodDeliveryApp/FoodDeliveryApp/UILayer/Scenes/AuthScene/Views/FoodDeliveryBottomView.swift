@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BottomView: UIView {
+class FoodDeliveryBottomView: UIView {
     
     //MARK: - Views
     private let label = UILabel()
@@ -30,7 +30,7 @@ class BottomView: UIView {
 }
 
 //MARK: - Actions
-private extension BottomView {
+private extension FoodDeliveryBottomView {
     @objc func googleButtonPressed() {
         buttonActionOne?()
     }
@@ -40,7 +40,7 @@ private extension BottomView {
 }
 
 //MARK: - Layout
-private extension BottomView {
+private extension FoodDeliveryBottomView {
     func setupLayout() {
         self.backgroundColor = AppColors.white
         setupLabel()
@@ -117,5 +117,5 @@ private extension BottomView {
 
 
 #Preview("BottomView", traits: .fixedLayout(width: 400, height: 150)) {
-    BottomView()
+    FoodDeliveryBottomView()
 }

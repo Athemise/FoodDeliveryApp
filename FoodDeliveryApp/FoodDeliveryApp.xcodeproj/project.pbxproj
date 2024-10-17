@@ -22,7 +22,9 @@
 		08696B142C6145360047E7C7 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08696B132C6145360047E7C7 /* OnboardingViewController.swift */; };
 		08696B162C61455F0047E7C7 /* OnboardingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08696B152C61455F0047E7C7 /* OnboardingViewPresenter.swift */; };
 		0878240E2C7D056000954823 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0878240D2C7D056000954823 /* LoginViewController.swift */; };
-		087824132C7D05F100954823 /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087824122C7D05F100954823 /* BottomView.swift */; };
+		087824132C7D05F100954823 /* FoodDeliveryBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087824122C7D05F100954823 /* FoodDeliveryBottomView.swift */; };
+		087A58812C98495F00C5A37A /* FoodDeliveryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087A58802C98495F00C5A37A /* FoodDeliveryTextField.swift */; };
+		087A58832C98530500C5A37A /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087A58822C98530500C5A37A /* LoginPresenter.swift */; };
 		08993C642C5D5DFF00164BC2 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08993C572C5D5DFF00164BC2 /* Roboto-Medium.ttf */; };
 		08993C652C5D5DFF00164BC2 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08993C582C5D5DFF00164BC2 /* Roboto-Light.ttf */; };
 		08993C662C5D5DFF00164BC2 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08993C592C5D5DFF00164BC2 /* Roboto-Regular.ttf */; };
@@ -62,7 +64,9 @@
 		08696B132C6145360047E7C7 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		08696B152C61455F0047E7C7 /* OnboardingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPresenter.swift; sourceTree = "<group>"; };
 		0878240D2C7D056000954823 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		087824122C7D05F100954823 /* BottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
+		087824122C7D05F100954823 /* FoodDeliveryBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDeliveryBottomView.swift; sourceTree = "<group>"; };
+		087A58802C98495F00C5A37A /* FoodDeliveryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDeliveryTextField.swift; sourceTree = "<group>"; };
+		087A58822C98530500C5A37A /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		08993C572C5D5DFF00164BC2 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		08993C582C5D5DFF00164BC2 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
 		08993C592C5D5DFF00164BC2 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				08429D6C2C8B773700FDBC80 /* FoodDeliveryButton.swift */,
+				087A58802C98495F00C5A37A /* FoodDeliveryTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -197,7 +202,6 @@
 				087824112C7D05D400954823 /* Presenters */,
 				087824102C7D05CC00954823 /* Controllers */,
 				0878240F2C7D05C600954823 /* Views */,
-				0878240D2C7D056000954823 /* LoginViewController.swift */,
 			);
 			path = AuthScene;
 			sourceTree = "<group>";
@@ -205,7 +209,7 @@
 		0878240F2C7D05C600954823 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				087824122C7D05F100954823 /* BottomView.swift */,
+				087824122C7D05F100954823 /* FoodDeliveryBottomView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -213,6 +217,7 @@
 		087824102C7D05CC00954823 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0878240D2C7D056000954823 /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 		087824112C7D05D400954823 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				087A58822C98530500C5A37A /* LoginPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -388,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08993C732C5D5FF900164BC2 /* UIFont + Extension.swift in Sources */,
+				087A58832C98530500C5A37A /* LoginPresenter.swift in Sources */,
 				08E52EE12C4A6B9E00B61FA6 /* ViewController.swift in Sources */,
 				08E52EDD2C4A6B9E00B61FA6 /* AppDelegate.swift in Sources */,
 				08993C772C5D662F00164BC2 /* AppColors.swift in Sources */,
@@ -405,9 +412,10 @@
 				084688282C77C8C10010E265 /* UserStorage.swift in Sources */,
 				080A8CE62C7BB80F001B55F5 /* SceneFactory.swift in Sources */,
 				08993C752C5D652400164BC2 /* UIColor + Extension.swift in Sources */,
-				087824132C7D05F100954823 /* BottomView.swift in Sources */,
+				087824132C7D05F100954823 /* FoodDeliveryBottomView.swift in Sources */,
 				08429D6D2C8B773700FDBC80 /* FoodDeliveryButton.swift in Sources */,
 				08696B162C61455F0047E7C7 /* OnboardingViewPresenter.swift in Sources */,
+				087A58812C98495F00C5A37A /* FoodDeliveryTextField.swift in Sources */,
 				08696B022C6130890047E7C7 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
